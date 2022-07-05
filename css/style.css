@@ -5,7 +5,7 @@
     --grey: #757575;
     --hover: #2196F3;
 }
-
+  
 *,
 *::before,
 *::after {
@@ -30,7 +30,7 @@ body {
 
 a {
     text-decoration: none;
-    color: var(--grey-dark);
+    /* color: var(--grey-dark); */
 }
  
 .active::after {
@@ -411,13 +411,13 @@ address {
     margin-top: 20px;
 }
 
-.contacts-address,
-.contacts-email {
+.address__footer-address,
+.address__footer-email {
     margin-bottom: 9px;
 }
 
-.contacts-email,
-.contacts-telephone {
+.address__footer-email,
+.address__footer-telephone {
         font-size: 14px;
         line-height: 24px;
         color: rgba(255, 255, 255, 0.6);
@@ -1012,7 +1012,7 @@ body {
 
 a {
     text-decoration: none;
-    color: var(--grey-dark);
+    /* color: var(--grey-dark); */
 }
  
 .active::after {
@@ -1394,13 +1394,13 @@ address {
     margin-top: 20px;
 }
 
-.contacts-address,
-.contacts-email {
+.addres__footer-addres,
+.addres__footer-email {
     margin-bottom: 9px;
 }
 
-.contacts-email,
-.contacts-telephone {
+.address__footer-email-link,
+.address__footer-telephone-link {
         font-size: 14px;
         line-height: 24px;
         color: rgba(255, 255, 255, 0.6);
