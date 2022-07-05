@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -569,7 +569,7 @@
     <script src="./js/modal.js"></script>
 
   </body>
-</html>
+</html> -->
 
 
 
@@ -1057,36 +1057,36 @@
         </address>
       </div>
 
-      <div class="join-us-icons">
-        <h4 class="join-us-title">DOŁACZ DO NAS</h4>
-        <ul class="join-us-list">
-          <li class="join-us">
-            <a class="join-us-footer" href="#">
-              <svg class="join-us-footer-icons">
+      <div class="join-us">
+        <h4 class="join-us__title">DOŁĄCZ DO NAS</h4>
+        <ul class="join-us__list">
+          <li class="join-us__item">
+            <a class="join-us__item-link" href="#">
+              <svg class="join-us__icons">
                 <use href="./images/sprite.svg#icon-instagram"></use>
               </svg>
             </a>        
           </li>
 
-          <li class="join-us">
-            <a class="join-us-footer" href="#">
-              <svg class="join-us-footer-icons">
+          <li class="join-us__item">
+            <a class="join-us__item-link" href="#">
+              <svg class="join-us__icons">
                 <use href="./images/sprite.svg#icon-bird"></use>
               </svg>
             </a>
           </li>
 
-          <li class="join-us">
-            <a class="join-us-footer" href="#">
-              <svg class="join-us-footer-icons">
+          <li class="join-us__item">
+            <a class="join-us__item-link" href="#">
+              <svg class="join-us__icons">
                 <use href="./images/sprite.svg#icon-facebook"></use>
               </svg>
             </a>
           </li>
 
-          <li class="join-us">
-            <a class="join-us-footer" href="#">
-              <svg class="join-us-footer-icons">
+          <li class="join-us__item">
+            <a class="join-us__item-link" href="#">
+              <svg class="join-us__icons">
                 <use href="./images/sprite.svg#icon-linkedin"></use>
               </svg>
             </a>
@@ -1094,12 +1094,12 @@
         </ul>
       </div>
         <div class="newsletter">
-        <form class="email-form" action="#" method="POST" placeholder="E-mail">
-          <label class="email-label"> ZAPISZ SIĘ DO NEWSLATTERA
-          <input class="newsletter-input" type="e-mail" name="e-mail" placeholder="E-mail"/> 
+        <form class="newsletter-form" action="#" method="POST" placeholder="E-mail">
+          <label class="newsletter-form__label"> ZAPISZ SIĘ DO NEWSLATTERA
+          <input class="newsletter-form__input" type="e-mail" name="e-mail" placeholder="E-mail"/> 
           </label> 
         <button class="save-button" type="submit">Zapisz się
-          <svg class="icon-icon-send">
+          <svg class="save-button__icon">
             <use href="./images/sprite.svg#icon-icon-send"></use>
           </svg> 
         </button> 
@@ -1107,38 +1107,38 @@
       </div>
       </footer>
 
-    <div class="backdrop is-hidden" data-modal>
-      <div class="modal">
-        <button type="button" class= "modal-x" data-modal-close>X</button>
-        <a class="form-title">Zostaw swoje dane w formularzu poniżej</a> 
-        <form class="modal-form" action="#" method="POST">
-          <label class="focus-label"> Imie 
-          <svg class="icon-person form-icon">
-            <use href="./images/sprite.svg#icon-person"></use>
-          </svg>  
-          <input class="window-modal" type="name" name="form-name"/>
-          </label>
-          <label class="focus-label"> Telefon
-          <svg class="icon-phone-two form-icon">
-            <use href="./images/sprite.svg#icon-phone-two"></use>
-          </svg>
-          <input class="window-modal" type="telephone" name="form-telephone" />
-          </label>
-          <label class="focus-label"> Email
-          <svg class="icon-email-two form-icon">
-            <use href="./images/sprite.svg#icon-email-two"></use>
-          </svg>
-          <input class="window-modal" type="email" name="form-email" />
-          </label> 
-          <label class="focus-label"> Komentarz
-          <textarea class=" window-modal comments" name="form-comment" placeholder="Wprowadź tekst"></textarea>
-          </label> 
-          <input class="window-modal modal-form-policy visually-hidden" id="user-policy" type="checkbox" name="policy">
-          <label for="user-policy" class="modal-form-policy-text">
-          Oświadczam iż akceptuję <a class="text-decoration" href=""> Regulamin </a> i <a class="text-decoration" href=""> Politykę Prywatności. </a></label>
-         <button class="submit-button" type="submit">Wyślij</button> 
-        </form>   
-        </div>
+      <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+          <button type="button" class= "modal-button" data-modal-close>X</button>
+          <a class="modal-title">Zostaw swoje dane w formularzu poniżej</a> 
+          <form class="modal-form" action="#" method="POST">
+            <label class="modal-form__label"> Imie 
+            <svg class="modal-form__icon form-icon">
+              <use href="./images/sprite.svg#icon-person"></use>
+            </svg>  
+            <input class="window-modal" type="name" name="form-name"/>
+            </label>
+            <label class="modal-form__label"> Telefon
+            <svg class="modal-form__icon form-icon">
+              <use href="./images/sprite.svg#icon-phone-two"></use>
+            </svg>
+            <input class="window-modal" type="telephone" name="form-telephone" />
+            </label>
+            <label class="modal-form__label"> Email
+            <svg class="modal-form__icon form-icon">
+              <use href="./images/sprite.svg#icon-email-two"></use>
+            </svg>
+            <input class="window-modal" type="email" name="form-email" />
+            </label> 
+            <label class="modal-form__label"> Komentarz
+            <textarea class=" window-modal comments" name="form-comment" placeholder="Wprowadź tekst"></textarea>
+            </label> 
+            <input class="window-modal modal-form-policy visually-hidden" id="user-policy" type="checkbox" name="policy">
+            <label for="user-policy" class="modal-form-policy-text">
+            Oświadczam iż akceptuję <a class="text-decoration" href=""> Regulamin </a> i <a class="text-decoration" href=""> Politykę Prywatności. </a></label>
+           <button class="submit-button" type="submit">Wyślij</button> 
+          </form>   
+          </div>
     </div> 
 
     <script src="./js/modal.js"></script>
