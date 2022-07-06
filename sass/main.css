@@ -64,8 +64,8 @@ img {
 
 /*======  modal-window ===== */
 :root {
-  --pure-white: #FFFFFF;
-  --white: #F5F4FA;
+  --background: #FFFFFF;
+  --overlay-background: #F5F4FA;
   --grey-dark: #212121;
   --grey: #757575;
   --hover: #2196F3;
@@ -74,7 +74,7 @@ img {
 body {
   font-family: "Roboto", "Relaway", sans-serif;
   font-style: normal;
-  background: #FFFFFF;
+  background: var(--background);
 }
 
 .page-header__menu {
@@ -82,7 +82,7 @@ body {
   display: flex;
   align-items: center;
   height: 80px;
-  background: #FFFFFF;
+  background: var(--background);
 }
 
 .menu-list {
@@ -171,7 +171,7 @@ body {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
-  color: var(--pure-white);
+  color: var(--background);
   cursor: pointer;
 }
 
@@ -203,7 +203,7 @@ body {
   font-size: 44px;
   line-height: 1.36;
   text-align: center;
-  color: var(--pure-white);
+  color: var(--background);
   width: 626px;
 }
 
@@ -218,7 +218,7 @@ body {
   font-size: 16px;
   line-height: 1.9;
   display: flex;
-  color: var(--pure-white);
+  color: var(--background);
   background: var(--hover);
   border: none;
   cursor: pointer;
@@ -268,7 +268,7 @@ body {
   justify-content: center;
   width: 270px;
   height: 120px;
-  background-color: #F5F4FA;
+  background-color: var(--overlay-background);
   margin-top: 94px;
   margin-bottom: 30px;
 }
@@ -310,14 +310,14 @@ body {
   height: 70px;
   bottom: 0;
   left: 0;
-  color: #FFFFFF;
+  color: var(--background);
   font-size: 14px;
   line-height: 1.172;
   padding-top: 27px;
 }
 
 .work-team {
-  background: var(--white);
+  background: var(--overlay-background);
 }
 
 .work-team__title {
@@ -340,7 +340,7 @@ body {
 }
 
 .work-team__images {
-  background: #FFFFFF;
+  background: var(--background);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   width: 270px;
@@ -386,7 +386,7 @@ body {
   background-color: var(--hover);
 }
 .work-team__description-link:hover svg {
-  fill: #FFFFFF;
+  fill: var(--background);
 }
 
 .work-team__description-icons {
@@ -427,7 +427,7 @@ body {
   transition-property: border;
 }
 .customers-subsection__item:hover {
-  background-color: var(--pure-white);
+  background-color: var(--background);
   border: 1px solid var(--hover);
 }
 .customers-subsection__item:hover svg {
@@ -457,7 +457,7 @@ body {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.7;
-  color: var(--pure-white);
+  color: var(--background);
   font-family: inherit;
   padding: 60px 0;
 }
@@ -516,7 +516,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  fill: #FFFFFF;
+  fill: var(--background);
   background-color: rgba(255, 255, 255, 0.1);
   height: 44px;
   width: 44px;
@@ -528,7 +528,7 @@ body {
   background-color: var(--hover);
 }
 .join-us__item-link:hover svg {
-  fill: #fff;
+  fill: var(--background);
 }
 
 .join-us__icons {
@@ -546,9 +546,12 @@ body {
   transform: translate(-50%, -50%);
   width: 528px;
   min-height: 581px;
-  background-color: #fff;
+  background-color: var(--background);
   transition: 500ms cubic-bezier(0.4, 0, 0.2, 1);
   transition-property: transform;
+}
+.is-hidden .modal {
+  transform: translate(-50%);
 }
 
 .modal-button {
@@ -557,7 +560,7 @@ body {
   right: 8px;
   height: 30px;
   width: 30px;
-  background-color: #FFFFFF;
+  background-color: var(--background);
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   justify-content: center;
@@ -655,7 +658,7 @@ body {
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   border: none;
-  color: #FFFFFF;
+  color: var(--background);
   font-size: 16px;
   line-height: 1.875;
   margin-left: 164px;
@@ -687,7 +690,7 @@ body {
   outline: none;
 }
 
-a.modal-form__text-decoration {
+.modal-form__text-decoration {
   color: #2196F3;
   text-decoration: underline;
   font-size: 14px;
@@ -701,14 +704,10 @@ a.modal-form__text-decoration {
   outline: none;
 }
 
-modal-form__input-textarea::placeholder {
+.modal-form__input-textarea::placeholder {
   font-size: 16px;
   line-height: 1.25;
   color: rgba(255, 255, 255, 0.6);
-}
-
-.is-hidden .modal {
-  transform: translate(-50%);
 }
 
 .newsletter {
@@ -729,7 +728,7 @@ modal-form__input-textarea::placeholder {
   height: 50px;
   width: 358px;
   background-color: transparent;
-  color: #FFFFFF;
+  color: var(--background);
 }
 .newsletter-form__input:focus, .newsletter-form__input:active {
   outline: none;
@@ -740,7 +739,7 @@ modal-form__input-textarea::placeholder {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.143;
-  color: #FFFFFF;
+  color: var(--background);
 }
 
 .newsletter__save-button {
@@ -749,7 +748,7 @@ modal-form__input-textarea::placeholder {
   width: 200px;
   height: 50px;
   background-color: #2196F3;
-  color: #FFFFFF;
+  color: var(--background);
   font-weight: 700;
   font-size: 16px;
   line-height: 1.875;
@@ -782,7 +781,7 @@ modal-form__input-textarea::placeholder {
 
 .portfolio-buttons__item-button {
   display: flex;
-  background: #F5F4FA;
+  background: var(--overlay-background);
   border-radius: 4px;
   padding: 6px 22px 6px 22px;
   text-align: center;
@@ -793,7 +792,7 @@ modal-form__input-textarea::placeholder {
   font-size: 16px;
   line-height: 1.6;
   color: var(--grey-dark);
-  background: var(--white);
+  background: var(--overlay-background);
   border-radius: 4px;
   font-family: inherit;
   border: none;
@@ -802,7 +801,7 @@ modal-form__input-textarea::placeholder {
 }
 .portfolio-buttons__item-button:hover {
   background-color: var(--hover);
-  color: var(--pure-white);
+  color: var(--background);
   box-shadow: 0px 2px rgba(0, 0, 0, 0.12), 0px 1px rgba(0, 0, 0, 0.08), 0px 3px rgba(0, 0, 0, 0.1);
 }
 
@@ -854,7 +853,7 @@ modal-form__input-textarea::placeholder {
   height: 295px;
   transform: translateY(100%);
   background-color: rgba(33, 150, 243, 0.9);
-  color: #FFFFFF;
+  color: var(--background);
   padding-top: 49px;
   padding-left: 24px;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -870,7 +869,7 @@ modal-form__input-textarea::placeholder {
   position: absolute;
   bottom: 0;
   left: 0;
-  background-color: #fff;
+  background-color: var(--background);
   border-right: 1px solid #EEEEEE;
   border-left: 1px solid #EEEEEE;
   border-bottom: 1px solid #EEEEEE;

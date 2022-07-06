@@ -27,7 +27,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    fill: #FFFFFF;
+    fill: var(--background);
     background-color: rgba(255, 255, 255, 0.1);
     height: 44px;
     width: 44px;
@@ -40,7 +40,7 @@
         }
 
         &:hover svg{
-        fill: #fff;
+        fill: var(--background);
         }
 }
 

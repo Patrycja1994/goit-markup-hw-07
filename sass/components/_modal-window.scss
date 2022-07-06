@@ -8,9 +8,13 @@
     transform: translate(-50%, -50%);
     width: 528px;
     min-height: 581px;
-    background-color: #fff;
+    background-color: var(--background);
     transition: 500ms cubic-bezier(0.4, 0, 0.2, 1);
     transition-property: transform;
+
+        .is-hidden & {
+        transform: translate(-50%);
+        } 
 }
 
 .modal-button {
@@ -19,7 +23,7 @@
     right: 8px;
     height: 30px;
     width: 30px;
-    background-color: #FFFFFF;
+    background-color: var(--background);
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
     justify-content: center;
@@ -119,7 +123,7 @@
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     border:none;
-    color: #FFFFFF;
+    color: var(--background);
     font-size: 16px;
     line-height: 1.875;
     margin-left: 164px;
@@ -151,7 +155,7 @@
     outline: none;
  }
 
- a.modal-form__text-decoration {
+ .modal-form__text-decoration {
     color:#2196F3;
     text-decoration: underline;
     font-size: 14px;
@@ -165,12 +169,9 @@
      outline: none;
 }   
 
-modal-form__input-textarea::placeholder {
+.modal-form__input-textarea::placeholder {
     font-size: 16px;
     line-height: 1.25;
     color: rgba(255, 255, 255, 0.6);
 }
-
-.is-hidden .modal {
-    transform: translate(-50%);
-}  
+ 

@@ -16,7 +16,7 @@
     height: 50px;
     width: 358px;  
     background-color: transparent;
-    color: #FFFFFF;
+    color: var(--background);
 
         &:focus,
         &:active {
@@ -29,7 +29,7 @@
     font-weight: 700;
     font-size: 14px;
     line-height: 1.143;
-    color:#FFFFFF;
+    color: var(--background);
 }
 
 .newsletter__save-button {
@@ -38,7 +38,7 @@
     width: 200px;
     height: 50px;
     background-color:#2196F3;
-    color:#FFFFFF;
+    color: var(--background);
     font-weight: 700;
     font-size: 16px;
     line-height: 1.875;
