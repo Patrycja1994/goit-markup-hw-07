@@ -1,0 +1,50 @@
+.newsletter {
+    margin-top: 12px;
+    margin-left: 77px;
+}
+
+.newsletter-form {
+    display: flex;
+}
+
+.newsletter-form__input {
+    padding-left: 16px;
+    margin-top: 20px;
+    border-color: rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    height: 50px;
+    width: 358px;
+}
+
+.newsletter-form__label {
+    width: 358px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.143;
+    color:#FFFFFF;
+}
+
+.newsletter__save-button {
+    width: 200px;
+    height: 50px;
+    background-color:#2196F3;
+    color:#FFFFFF;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.875;
+    border-radius: 4px;
+    margin-top: 36px;
+    margin-left: 12px;
+    border: none;
+    text-align: left;
+    padding-left: 42px;
+    cursor: pointer;
+}
+
+.newsletter__save-button-icon {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    margin-left: 24px;
+    margin-right: 13px;
+}
