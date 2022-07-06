@@ -73,19 +73,6 @@
     top: 30px;
 }
 
-.modal-form__policy-text::before {
-    display: inline-block;
-    content: "";
-    width: 16px;
-    height: 15px;
-    outline: 2px solid #212121;
-    border-radius: 3px;
-    transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    margin-right: 8px;
-    margin-left: 55px;
-    cursor: pointer;
- }
-
  .modal-form__policy-text {
     display: flex;
     align-items: center;
@@ -96,6 +83,20 @@
     line-height: 1.714;
     margin-bottom: 30px;
     margin-right: 55px;
+
+    
+        &::before {
+        display: inline-block;
+        content: "";
+        width: 16px;
+        height: 15px;
+        outline: 2px solid #212121;
+        border-radius: 3px;
+        transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        margin-right: 8px;
+        margin-left: 55px;
+        cursor: pointer;
+        }
  }
 
 .modal-form__comments {
@@ -164,7 +165,7 @@
      outline: none;
 }   
 
-input::placeholder {
+modal-form__input-textarea::placeholder {
     font-size: 16px;
     line-height: 1.25;
     color: rgba(255, 255, 255, 0.6);

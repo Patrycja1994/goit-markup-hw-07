@@ -2,10 +2,25 @@
     background: var(--white);
 }
 
+.work-team__title {
+    text-align: center;
+    margin-bottom: 50px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    color: var(--grey-dark);
+}
+
 .work-team__list {
     display: flex;
     text-align: center;
     align-items: center;
+}
+
+.work-team__members {
+    &:not(:last-of-type) {
+    margin-right: 30px;
+    }
 }
 
 .work-team__images {
@@ -14,19 +29,6 @@
     border-radius: 0px 0px 4px 4px;
     width: 270px;
     height: 428px;
-}
-
-.work-team__members:not(:last-of-type) {
-    margin-right: 30px;
-}
-
-.work-team__title {
-    text-align: center;
-    margin-bottom: 50px;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.17;
-    color: var(--grey-dark);
 }
 
 .work-team__description-name {
@@ -39,11 +41,23 @@
     color: var(--grey-dark);
 }
 
+.work-team__description-occupation {
+    color: #757575;
+    font-size: 16px;
+    font-weight: 400;
+}
+
 .work-team__description-list {
     display: flex;
     align-items: center;
     justify-content: center;
     margin-top: 12px;
+}
+
+.work-team__description-item {
+    &:not(:last-child) {
+    margin-right: 10px;
+    }
 }
 
 .work-team__description-link {
@@ -53,6 +67,14 @@
     height: 44px;
     width: 44px;
     border-radius: 50%;
+
+        &:hover {
+        background-color: var(--hover);
+        }
+    
+        &:hover svg {
+        fill:#FFFFFF
+        }
 }
 
 .work-team__description-icons {
@@ -64,14 +86,4 @@
     height: 20px;
 }
 
-.work-team__description-item:not(:last-child) {
-    margin-right: 10px;
-}
 
-.work-team__description-link:hover svg {
-    fill:#FFFFFF
-}
-
-.work-team__description-link:hover {
-    background-color: var(--hover);
-}

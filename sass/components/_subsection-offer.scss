@@ -3,6 +3,8 @@
     font-size: 36px;
     line-height: 1.17;
     color: var(--grey-dark);
+    margin-bottom: 50px;
+    text-align: center;
 }
 
 .subsection-offer__list {
@@ -10,12 +12,12 @@
     text-align: center;
 }
 
-.subsection-offer__item:not(:last-child) {
-    margin-right:30px;
-}
-
 .subsection-offer__item {
     position: relative;
+
+        &:not(:last-child) {
+        margin-right:30px;
+        }
 }
 
 .subsection-offer__layout{
@@ -29,9 +31,4 @@
     font-size: 14px;
     line-height: 1.172;
     padding-top: 27px;
-}
-
-.subsection-offer__title {
-    margin-bottom: 50px;
-    text-align: center;
 }

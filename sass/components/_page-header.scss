@@ -11,16 +11,17 @@
     display: flex;
 }
 
+.menu-list__item {
+    &:not(:last-child) {
+    margin-right: 46px;
+    }
+}
+
 .menu-link__item {
     position: relative;
-}
 
-.menu-list__item:not(:last-child) {
-    margin-right: 46px;
-}
-
-.menu-link__item:active::after,
-.menu-link__item:hover::after {
+    &:active::after,
+    &:hover::after {
     content: " ";
     display: block;
     border-top: 4px solid #2196F3;
@@ -30,13 +31,33 @@
     width: 100%;
     left: 0;
     margin-top: 16px;
-} 
+    } 
+}
 
 .contacts-list {
     display: flex;
     align-items: center;
     justify-content: center;
     margin-left: auto;
+}
+
+.contacts-list__item {
+    &:hover {
+        color:var(--hover);
+    }
+    
+    &:hover svg {
+        fill: var(--hover)
+    }
+}
+
+.contacts-list__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: color, fill;
+    color: var(--grey);
 }
 
 .menu-link__item,
@@ -46,15 +67,11 @@
     font-size: 14px;
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
     transition-property: all;
-}
 
-.menu-link__item:hover,
-.contacts-list__link:hover {
-    color: var(--hover);
-}
-
-.contacts-list__link {
-    color: var(--grey);
+        &:hover,
+        &:hover {
+        color: var(--hover);
+        }
 }
 
 .contacts-list__link-telephone {
@@ -78,18 +95,5 @@
     margin-right: 10px;
 }
 
-.contacts-list__item:hover {
-    color:var(--hover);
-}
 
-.contacts-list__item:hover svg {
-    fill: var(--hover)
-}
 
-.contacts-list__item a {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    transition-property: color, fill;
-}

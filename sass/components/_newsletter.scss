@@ -17,12 +17,12 @@
     width: 358px;  
     background-color: transparent;
     color: #FFFFFF;
-}
 
-.newsletter-form__input:focus,
-.newsletter-form__input:active {
-     outline: none;
-}   
+        &:focus,
+        &:active {
+        outline: none;
+        }  
+} 
 
 .newsletter-form__label {
     width: 358px;

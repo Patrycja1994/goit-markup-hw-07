@@ -25,6 +25,15 @@
     cursor: pointer;
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
     transition-property: border;
+    
+        &:hover {
+        background-color: var(--pure-white);
+        border: 1px solid var(--hover);
+        }
+
+        &:hover svg{
+         fill: var(--hover);
+        }
 }
 
 .customers-subsection__link {
@@ -42,12 +51,3 @@
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
     transition-property: fill;
 } 
-
-.customers-subsection__item:hover {
-    background-color: var(--pure-white);
-    border: 1px solid var(--hover);
-}
-
-.customers-subsection__item:hover svg{
-    fill: var(--hover);
-}
