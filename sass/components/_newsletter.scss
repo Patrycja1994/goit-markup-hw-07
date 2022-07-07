@@ -1,33 +1,33 @@
 .newsletter {
-    margin-top: 12px;
     margin-left: 77px;
+    margin-top: 12px;
 
-                
-        &__save-button {
-        display: flex;
-        align-items: center;
-        width: 200px;
-        height: 50px;
-        background-color: var(--hover);
-        color: var(--background);
-        font-weight: 700;
-        font-size: 16px;
-        line-height: 1.875;
-        border-radius: 4px;
-        margin-top: 36px;
-        margin-left: 12px;
-        border: none;
-        text-align: left;
-        padding-left: 42px;
-        cursor: pointer;
-    }
-    
-        &__save-button-icon {
-        width: 24px;
-        height: 24px;
-        margin-left: 24px;
-        margin-right: 13px;
-    }
+            
+    &__save-button {
+    display: flex;
+    align-items: center;
+    width: 200px;
+    height: 50px;
+    background-color:var(--hover);
+    color: var(--background);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.875;
+    border-radius: 4px;
+    margin-top: 36px;
+    margin-left: 12px;
+    border: none;
+    text-align: left;
+    padding-left: 42px;
+    cursor: pointer;
+}
+
+    &__save-button-icon {
+    width: 24px;
+    height: 24px;
+    margin-left: 24px;
+    margin-right: 13px;
+}
 }
 
 .newsletter-form {
@@ -58,4 +58,5 @@
         color: var(--background);
     }
 }
+
 
