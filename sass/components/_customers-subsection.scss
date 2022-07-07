@@ -4,50 +4,52 @@
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
-    color: var(--grey-dark);
+    color: var(--text-title);
     margin-top: 50px;
-}
 
-.customers-subsection__list {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 94px;
-}
-
-.customers-subsection__item {
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    height: 92px;
-    width: 170px;
-    margin-top: 50px;
-    border: 1px solid #AFB1B8; border-radius:4px;
-    cursor: pointer;
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    transition-property: border;
+        &__list {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 94px;
+    }
     
-        &:hover {
-        background-color: var(--background);
-        border: 1px solid var(--hover);
-        }
-
-        &:hover svg{
-         fill: var(--hover);
-        }
+        &__item {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        height: 92px;
+        width: 170px;
+        margin-top: 50px;
+        border: 1px solid #AFB1B8; border-radius:4px;
+        cursor: pointer;
+        transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        transition-property: border;
+        
+            &:hover {
+            background-color: var(--background);
+            border: 1px solid var(--hover);
+            }
+    
+            &:hover svg{
+             fill: var(--hover);
+            }
+    }
+    
+        &__link {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        margin: 16px 32px;
+        max-height: 52px;
+        max-width: 94px;
+        display: flex;
+        fill: #AFB1B8;
+    }
+    
+        &__icons {
+        transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        transition-property: fill;
+    } 
+    
 }
 
-.customers-subsection__link {
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    margin: 16px 32px;
-    max-height: 52px;
-    max-width: 94px;
-    display: flex;
-    fill: #AFB1B8;
-}
-
-.customers-subsection__icons {
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    transition-property: fill;
-} 
